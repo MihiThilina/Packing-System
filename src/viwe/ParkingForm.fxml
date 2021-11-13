@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ParkingSystemForm" prefHeight="500.0" prefWidth="755.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParkingFormController">
+   <children>
+      <ImageView fitHeight="194.0" fitWidth="233.0" layoutX="-102.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true" rotate="168.1">
+         <image>
+            <Image url="@../21-219277_creativity-and-flair-for-graphic-design-brochure-creative.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="233.0" fitWidth="448.0" layoutX="231.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../73794ff8826e7f5e6aaee6b1b6405362.jpg" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="cmbSelectVehicle" layoutX="130.0" layoutY="80.0" prefHeight="25.0" prefWidth="191.0" promptText="     " />
+      <Text layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select  Vehicle" wrappingWidth="110.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="13.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type" wrappingWidth="102.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Driver" wrappingWidth="54.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cmbDriver" layoutX="129.0" layoutY="193.0" prefHeight="25.0" prefWidth="191.0" />
+      <JFXTextField fx:id="txtVehicleType" layoutX="127.0" layoutY="132.0" onAction="#VehicleType" prefHeight="25.0" prefWidth="191.0" promptText="        " text="     ">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#122c423f" height="105.0" layoutX="118.0" layoutY="245.0" stroke="WHITE" strokeType="INSIDE" width="224.0" />
+      <Text layoutX="128.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Parking Slot Number" wrappingWidth="210.00000336766243">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtSlotNumber" layoutX="178.0" layoutY="263.0" onAction="#ParkingSlotNumber" prefHeight="39.0" prefWidth="91.0" promptText="          " text="    " unFocusColor="#c6b7b7">
+         <font>
+            <Font size="33.0" />
+         </font></JFXTextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0ad0cd" height="71.0" layoutX="-18.0" layoutY="-5.0" stroke="WHITE" strokeType="INSIDE" width="823.0" />
+      <Text fill="WHITE" layoutX="15.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parking System " wrappingWidth="281.1367304325104">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff9e" height="58.0" layoutX="501.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#007175e3" height="50.0" layoutX="501.0" layoutY="154.0" stroke="WHITE" strokeType="INSIDE" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#006f73db" height="50.0" layoutX="501.0" layoutY="227.0" stroke="WHITE" strokeType="INSIDE" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#006f73d7" height="50.0" layoutX="500.0" layoutY="314.0" stroke="WHITE" strokeType="INSIDE" width="251.0" />
+      <JFXButton fx:id="butManagementLogin" buttonType="RAISED" layoutX="520.0" layoutY="318.0" onAction="#ManagementLogin" prefHeight="33.0" prefWidth="204.0" text="Management Log In" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butParkVehicle" buttonType="RAISED" layoutX="550.0" layoutY="153.0" onAction="#ParkingVehcles" prefHeight="50.0" prefWidth="154.0" text="Park Vehicle" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="butOndilivaryShift" buttonType="RAISED" layoutX="549.0" layoutY="227.0" onAction="#OnDiliveryShift" prefHeight="50.0" prefWidth="166.0" text="OnDilivery Shift" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtTime" focusColor="WHITE" layoutX="500.0" layoutY="76.0" prefHeight="58.0" prefWidth="251.0" unFocusColor="#797676">
+         <font>
+            <Font size="26.0" />
+         </font></JFXTextField>
+   </children>
+</AnchorPane>

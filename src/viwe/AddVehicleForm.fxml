@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AddVehicle" prefHeight="357.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddVehicleFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0ad0cd" height="54.0" layoutY="-2.0" stroke="WHITE" strokeType="INSIDE" width="580.0" />
+      <Text layoutX="9.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add  Vehicle" wrappingWidth="179.96484375">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4e2ff" height="39.0" layoutX="73.0" layoutY="96.0" stroke="WHITE" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4e2ff" height="39.0" layoutX="73.0" layoutY="181.0" stroke="WHITE" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4e2ff" height="39.0" layoutX="73.0" layoutY="256.0" stroke="WHITE" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4e2ff" height="39.0" layoutX="348.0" layoutY="96.0" stroke="WHITE" strokeType="INSIDE" width="200.0" />
+      <JFXComboBox fx:id="cmbVehicleType" layoutX="348.0" layoutY="99.0" onAction="#moveToWeight" prefHeight="32.0" prefWidth="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5a5a5b" height="54.0" layoutX="339.0" layoutY="269.0" stroke="WHITE" strokeType="INSIDE" width="172.0" />
+      <JFXButton fx:id="butAddVehicle" buttonType="RAISED" layoutX="339.0" layoutY="269.0" onAction="#clickAddVehicle" prefHeight="54.0" prefWidth="172.0" text="ADD VEHICLE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtVehicleNumber" layoutX="73.0" layoutY="99.0" onAction="#moveToVehicleType" prefHeight="32.0" prefWidth="200.0" />
+      <JFXTextField fx:id="txtMaxWeight" layoutX="73.0" layoutY="183.0" onAction="#movetoPassengers" prefHeight="32.0" prefWidth="200.0" />
+      <JFXTextField fx:id="passengers" layoutX="73.0" layoutY="259.0" prefHeight="32.0" prefWidth="200.0" />
+      <Text layoutX="75.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Number" wrappingWidth="131.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="74.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Weight" wrappingWidth="150.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="75.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Passengers" wrappingWidth="131.13672390580177">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="349.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type" wrappingWidth="131.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
